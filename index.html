@@ -48,6 +48,10 @@
             color: #555 !important;
         }
 
+        .idea {
+            background-color: #f9665652;
+        }
+
         /* next section */
         .promo-section {
             display: flex;
@@ -76,6 +80,113 @@
             max-width: 100%;
             border-radius: 10px;
         }
+
+        /* next section */
+        .product-section {
+            background-color: #f9665652;
+            /* Matching the orange tone */
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .product-info h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+
+        .product-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* next section */
+        .cta-section {
+            background-color: #052c44;
+            /* Dark blue background */
+            color: #fff;
+            /* White text color */
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .cta-section h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background-color: #e60000;
+            /* Red button background */
+            color: #fff;
+            /* White text color */
+            font-weight: bold;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #c00000;
+            /* Darker red on hover */
+            text-decoration: none;
+        }
+
+        /* next section */
+        .custom-container {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .custom-heading {
+            color: #343a40;
+        }
+
+        .custom-subheading {
+            color: #6c757d;
+        }
+
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            margin: 5px 0;
+        }
+
+        .custom-paragraph {
+            color: #495057;
+        }
+        
+        /* next section */
+        .main-header {
+            text-align: center;
+            padding: 20px;
+        }
+        .product-card {
+            margin: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+
     </style>
 </head>
 
@@ -121,22 +232,31 @@
     </div>
 
     <!-- next section -->
-    <div class="container text-center py-5">
+    <div class="container text-center py-5 idea">
         <h2 class="fw-bold">
-          You have ideas<span class="text-primary">—</span>Printful makes them a reality
+            You have ideas<span class="text-primary">—</span>Printful makes them a reality
         </h2>
         <p class="text-secondary">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus qui sed ea in non, consectetur esse odit libero minima, doloribus hic vero aut, magnam ut harum accusamus quis? Cumque nulla libero, architecto ullam nesciunt nihil. Ipsum, praesentium consectetur minima aliquam doloribus, illum dolor ullam qui reiciendis ea sunt ut nesciunt voluptatibus accusamus! Blanditiis, distinctio unde! Ipsa possimus libero quam, facilis fuga dolores labore qui tempora accusantium nostrum minus accusamus, rerum impedit. Eum provident, aperiam temporibus expedita est perspiciatis, dolorem molestias ipsa veritatis rem sint eos blanditiis doloremque? Error dolor, magni voluptas, nulla temporibus illum ex tempore, perferendis repellendus nemo iure?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus qui sed ea in non, consectetur esse
+            odit libero minima, doloribus hic vero aut, magnam ut harum accusamus quis? Cumque nulla libero, architecto
+            ullam nesciunt nihil. Ipsum, praesentium consectetur minima aliquam doloribus, illum dolor ullam qui
+            reiciendis ea sunt ut nesciunt voluptatibus accusamus! Blanditiis, distinctio unde! Ipsa possimus libero
+            quam, facilis fuga dolores labore qui tempora accusantium nostrum minus accusamus, rerum impedit. Eum
+            provident, aperiam temporibus expedita est perspiciatis, dolorem molestias ipsa veritatis rem sint eos
+            blanditiis doloremque? Error dolor, magni voluptas, nulla temporibus illum ex tempore, perferendis
+            repellendus nemo iure?
         </p>
-      </div>
+    </div>
 
-      <!-- next section -->
-      <div class="container my-5">
+    <!-- next section -->
+    <div class="container my-5">
         <div class="promo-section">
             <div class="promo-text">
                 <h2>Higher profit margins to increase your earnings</h2>
-                <p>Want to make a $10 profit per sale? $15? $20? You can. We’ve continued to lower our prices over the past two years. Our competitors? They’ve increased theirs.</p>
-                <p>And you can keep the prices dropping! Sign up for our Growth plan and get extra profit margins, discounts, and unmatched perks.</p>
+                <p>Want to make a $10 profit per sale? $15? $20? You can. We’ve continued to lower our prices over the
+                    past two years. Our competitors? They’ve increased theirs.</p>
+                <p>And you can keep the prices dropping! Sign up for our Growth plan and get extra profit margins,
+                    discounts, and unmatched perks.</p>
             </div>
             <div class="promo-video">
                 <video controls>
@@ -146,6 +266,129 @@
             </div>
         </div>
     </div>
+
+    <!-- next section -->
+    <div class="container my-5">
+        <div class="row align-items-center product-section">
+            <!-- Left Column: Product Images -->
+            <div class="col-md-6 text-center">
+                <div class="product-image">
+                    <img src="./media/pexels-anastasia-nagibina-1116204043-30095400.jpg" alt="Product Example"
+                        class="mb-3">
+                </div>
+            </div>
+
+            <!-- Right Column: Product Info -->
+            <div class="col-md-6 product-info text-justify-center" id=skeleton-introduction'">
+                <h2>Quality products with over 10K 5-star reviews</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium debitis minus corporis
+                    adipisci, provident sed doloribus repudiandae itaque! Quo doloribus placeat aliquid velit odit
+                    molestias. Nihil porro minima atque.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti odit quas reprehenderit amet qui
+                    dicta voluptatem. Dicta totam cupiditate necessitatibus aperiam et id rem expedita, porro, commodi
+                    iusto quia debitis!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="promo-section">
+            <div class="promo-text">
+                <h2>Higher profit margins to increase your earnings</h2>
+                <p>Want to make a $10 profit per sale? $15? $20? You can. We’ve continued to lower our prices over the
+                    past two years. Our competitors? They’ve increased theirs.</p>
+                <p>And you can keep the prices dropping! Sign up for our Growth plan and get extra profit margins,
+                    discounts, and unmatched perks.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="product-image">
+                    <img src="./media/pexels-madvortex-9412926.jpg" alt="Product Example" class="mb-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- next section -->
+    <section class="cta-section">
+        <h2>See for yourself—sign up for free</h2>
+        <a href="#" class="btn cta-button">Get started &rarr;</a>
+    </section>
+
+    <!-- next section -->
+    <div class="container text-center py-5 ">
+        <h2 class="fw-bold">
+            Work with a partner,<span class="text-primary">—</span> not just a supplier
+        </h2>
+        <p class="text-secondary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus qui sed ea in non, consectetur esse
+            odit libero minima, doloribus hic vero aut, magnam ut harum accusamus quis? Cumque nulla libero, architecto
+            ullam nesciunt nihil. Ipsum, praesentium consectetur minima aliquam doloribus, illum dolor ullam qui
+            reiciendis ea sunt ut nesciunt voluptatibus accusamus! Blanditiis, distinctio unde! Ipsa possimus libero
+            quam,
+        </p>
+    </div>
+
+    <!-- next section -->
+    <div class="container mt-5 custom-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item " style="height: 600px; width: 90%; border-radius: 30px;" src="./media/Order Custom T-Shirts at UberPrints.com (1).mp4"  autoplay muted loop></video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="custom-heading p-2">We take care of:</h2>
+                <ul class="custom-list p-3">
+                    <li>Quality control</li>
+                    <li>Order fulfillment</li>
+                    <li>Printing tech</li>
+                </ul>
+                <h2 class="custom-heading p-2">You get:</h2>
+                <ul class="custom-list p-3">
+                    <li>Global reach</li>
+                    <li>Repeat customers</li>
+                    <li>Hassle-free profit</li>
+                </ul>
+                <p class="mt-4 custom-paragraph">Save time and avoid juggling a network of providers.</p>
+                <h3 class="mt-4 custom-subheading">Choose the simplicity and confidence of working with the most reliable partner.</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- next section -->
+    <div class="main-header">
+        <h1>Discover more about Printful</h1>
+        <p>Get support every step of the way with in-depth resources and tutorials.</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-2 product-card">
+                <img src="https://via.placeholder.com/300x200?text=T-Shirt" alt="T-Shirt" class="product-image">
+                <h2>How print-on-demand works </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, expedita?
+                </p>
+            </div>
+            <div class="col-md-2 product-card">
+                <img src="https://via.placeholder.com/300x200?text=Mug" alt="Mug" class="product-image">
+                <h2>Printful Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maxime.</p>
+            </div>
+            <div class="col-md-2 product-card">
+                <img src="https://via.placeholder.com/300x200?text=Phone+Case" alt="Phone Case" class="product-image">
+                <h2>Integrations</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?</p>
+            </div>
+            <div class="col-md-2 product-card">
+                <img src="https://via.placeholder.com/300x200?text=Phone+Case" alt="Phone Case" class="product-image">
+                <h2>Pricing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, aut.</p>
+            </div>
+        </div>
+    </div>
+    
 
 
 </body>
