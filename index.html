@@ -79,6 +79,7 @@
         .promo-video video {
             max-width: 100%;
             border-radius: 10px;
+            height: 500px;
         }
 
         /* next section */
@@ -106,7 +107,7 @@
 
         /* next section */
         .cta-section {
-            background-color: #052c44;
+            background-color: #f9665652;
             /* Dark blue background */
             color: #fff;
             /* White text color */
@@ -144,7 +145,7 @@
             border: 1px solid #dee2e6;
             border-radius: 5px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #f9665652;
         }
 
         .custom-heading {
@@ -167,26 +168,46 @@
         .custom-paragraph {
             color: #495057;
         }
-        
+
         /* next section */
-        .main-header {
-            text-align: center;
-            padding: 20px;
+        /* .customs-container{
+            background-color: whitesmoke;
         }
-        .product-card {
-            margin: 20px;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding: 15px;
-            background-color: #ffffff;
+         */
+        .custom-header {
+            font-weight: bold;
         }
-        .product-image {
+
+        .custom-subtitle {
+            color: #6c757d;
+        }
+
+        .custom-card-title {
+            font-weight: bold;
+        }
+
+        .custom-card-text {
+            color: #6c757d;
+        }
+
+        .custom-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .custom-card-img-top {
             width: 100%;
-            height: auto;
-            border-radius: 5px;
+            /* Ensures the image spans the full width of the card */
+            height: 400px;
+            /* Maintains the aspect ratio */
+            border-radius: 10px 10px 0 0;
         }
-
-
     </style>
 </head>
 
@@ -259,10 +280,12 @@
                     discounts, and unmatched perks.</p>
             </div>
             <div class="promo-video">
-                <video controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="promo-video">
+                    <video controls autoplay muted loop playsinline>
+                        <source src="./media/WhatsApp Video 2025-01-10 at 15.56.50_ed2f6146.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
@@ -336,7 +359,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <video class="embed-responsive-item " style="height: 600px; width: 90%; border-radius: 30px;" src="./media/Order Custom T-Shirts at UberPrints.com (1).mp4"  autoplay muted loop></video>
+                    <video class="embed-responsive-item " style="height: 600px; width: 90%; border-radius: 30px;"
+                        src="./media/Untitled video - Made with Clipchamp (5).mp4" autoplay muted loop></video>
                 </div>
             </div>
             <div class="col-md-6">
@@ -353,42 +377,68 @@
                     <li>Hassle-free profit</li>
                 </ul>
                 <p class="mt-4 custom-paragraph">Save time and avoid juggling a network of providers.</p>
-                <h3 class="mt-4 custom-subheading">Choose the simplicity and confidence of working with the most reliable partner.</h3>
+                <h3 class="mt-4 custom-subheading">Choose the simplicity and confidence of working with the most
+                    reliable partner.</h3>
             </div>
         </div>
     </div>
 
     <!-- next section -->
-    <div class="main-header">
-        <h1>Discover more about Printful</h1>
-        <p>Get support every step of the way with in-depth resources and tutorials.</p>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-2 product-card">
-                <img src="https://via.placeholder.com/300x200?text=T-Shirt" alt="T-Shirt" class="product-image">
-                <h2>How print-on-demand works </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, expedita?
-                </p>
+    <div class="customs-container  my-5 pt-5">
+        <h1 class="custom-header text-center mb-4">Discover more about Printful</h1>
+        <p class="custom-subtitle text-center mb-5">Get support every step of the way with in-depth resources and
+            tutorials.</p>
+        <div class="custom-grid row g-4 container-fluid">
+            <div class="custom-grid-item col-md-6 col-lg-3">
+                <div class="custom-card">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/401255124/DJ/SM/IU/105980235/print-on-demand-drop-shipping-250x250.png"
+                        class="custom-card-img-top" alt="How print-on-demand works">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title pt-2 ms-3">How print-on-demand works</h5>
+                        <p class="custom-card-text ms-3">Find out the basics of print-on-demand.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2 product-card">
-                <img src="https://via.placeholder.com/300x200?text=Mug" alt="Mug" class="product-image">
-                <h2>Printful Products</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maxime.</p>
+            <div class="custom-grid-item col-md-6 col-lg-3">
+                <div class="custom-card">
+                    <img src="https://files.cdn.printful.com/o/upload/hero-banner-2-frame/56/w3e8/56edaa7a68dbbcc1b61ab8eaecf11f2c_t__1000"
+                        class="custom-card-img-top" alt="Printful products">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title pt-2 ms-3">Printful products</h5>
+                        <p class="custom-card-text ms-3">Learn about our curated selection of customizable products.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2 product-card">
-                <img src="https://via.placeholder.com/300x200?text=Phone+Case" alt="Phone Case" class="product-image">
-                <h2>Integrations</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?</p>
+            <div class="custom-grid-item col-md-6 col-lg-3">
+                <div class="custom-card">
+                    <img src="https://media.istockphoto.com/id/1352833698/photo/cheerful-businesspeople-using-a-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=Ux3u5T6P1JHMCHV8LGrprI7-7seep8HRQpHpXRw7so0="
+                        class="custom-card-img-top" alt="Integrations">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title pt-2 ms-3">Integrations</h5>
+                        <p class="custom-card-text ms-3">Get your products in front of customers no matter where they shop.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2 product-card">
-                <img src="https://via.placeholder.com/300x200?text=Phone+Case" alt="Phone Case" class="product-image">
-                <h2>Pricing</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, aut.</p>
+            <div class="custom-grid-item col-md-6 col-lg-3">
+                <div class="custom-card">
+                    <img src="https://cdn.betterproposals.io/blog/2022/12/cut-price--1024x704.png"
+                        class="custom-card-img-top " alt="Pricing">
+                    <div class="custom-card-body">
+                        <h5 class="custom-card-title pt-2 ms-3">Pricing</h5>
+                        <p class="custom-card-text ms-3">Calculate how much profit you can make.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- next section -->
+    <section class="cta-section">
+        <h2>Work with a partner, not just a supplier</h2>
+        <a href="#" class="btn cta-button">Get started &rarr;</a>
+    </section>
+
 
 
 </body>
